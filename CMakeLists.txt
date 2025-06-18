@@ -20,8 +20,8 @@ include (FetchContent)
 FetchContent_Declare(
   Boost
   GIT_REPOSITORY https://github.com/boostorg/boost.git
-  # boost 1.80
-  GIT_TAG         32da69a36f84c5255af8a994951918c258bac601
+  # boost 1.88
+  GIT_TAG         199ef13d6034c85232431130142159af3adfce22
 )
 FetchContent_MakeAvailable(Boost)
 find_package(boost_filesystem CONFIG REQUIRED)
