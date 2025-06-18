@@ -24,9 +24,6 @@ FetchContent_Declare(
   GIT_TAG         199ef13d6034c85232431130142159af3adfce22
 )
 FetchContent_MakeAvailable(Boost)
-find_package(boost_filesystem CONFIG REQUIRED)
-find_package(boost_system CONFIG REQUIRED)
-find_package(boost_uuid CONFIG REQUIRED)
 
 # Define library
 add_library(file INTERFACE )
@@ -179,8 +176,8 @@ install(
 #    INCLUDES DESTINATION "${include_install_dir}"
 #)
 
-install(
-    EXPORT "${targets_export_name}"
-    NAMESPACE "${namespace}"
-    DESTINATION "${config_install_dir}"
-)
+#install(
+#    EXPORT "${targets_export_name}"
+#    NAMESPACE "${namespace}"
+#    DESTINATION "${config_install_dir}"
+#)
