@@ -41,7 +41,7 @@ namespace pre::file {
     }
 
     // compute the hash
-    uint32_t hash[5] = {0};
+    boost::uuids::detail::sha1::digest_type hash = {0};
     char hash_buf[41] = {0};
 
     sha1.get_digest(hash);    
